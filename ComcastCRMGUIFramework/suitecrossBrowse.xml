@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="2" parallel="tests" name="Suite">
+  <test thread-count="2" parallel="tests" name="TestRunner-chrome">
+  <parameter name="Browser" value="chrome"></parameter>
+  <classes>
+      <class name="com.comcast.crm.generic.basicutility.crossbrowsertest.createContactTest"/>
+      <class name="com.comcast.crm.generic.basicutility.crossbrowsertest.createOrgTest"/>
+    </classes>
+    
+  </test> <!-- Test -->
+    <test thread-count="2" parallel="tests" name="TestRuner-firefox">
+    <parameter name="Browser" value="firefox"></parameter>
+  
+    <classes>
+      <class name="com.comcast.crm.generic.basicutility.crossbrowsertest.createContactTest"/>
+      <class name="com.comcast.crm.generic.basicutility.crossbrowsertest.createOrgTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

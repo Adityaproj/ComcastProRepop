@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="2" parallel="tests" name="Test 2(failed)">
+    <classes>
+      <class name="com.comcast.crm.generic.basicutility.createContactTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="congigBs"/>
+          <include name="congigBC"/>
+          <include name="congigAS"/>
+          <include name="congigAC"/>
+          <include name="createContact"/>
+          <include name="createconwithorg"/>
+          <include name="createContactwithDate"/>
+        </methods>
+      </class> <!-- com.comcast.crm.generic.basicutility.createContactTest -->
+    </classes>
+  </test> <!-- Test 2(failed) -->
+  <test thread-count="2" parallel="tests" name="Test 1(failed)">
+    <classes>
+      <class name="com.comcast.crm.generic.basicutility.createOrgTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="congigBs"/>
+          <include name="congigBC"/>
+          <include name="createorg"/>
+          <include name="createorgwithIndandType"/>
+          <include name="createOrgwithIndustry"/>
+          <include name="congigAS"/>
+          <include name="congigAC"/>
+        </methods>
+      </class> <!-- com.comcast.crm.generic.basicutility.createOrgTest -->
+    </classes>
+  </test> <!-- Test 1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

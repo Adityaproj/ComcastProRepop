@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+  <test  name="Test">
+    <classes>
+      <class name="com.comcast.crm.generic.basicutility.createOrgTest">
+      <methods>
+      <include name="createorg"/>
+      </methods>
+      </class>
+      <class name="com.comcast.crm.generic.basicutility.createContactTest">
+      <methods>
+      <include  name="createconwithorg"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

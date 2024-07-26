@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.comast.crm.orgtest.Createorgnization_Test"/>
+      <class name="com.comast.crm.orgtest.Createorgnization_byindustry_Test2"/>
+      <class name="com.comcast.crm.contacttest.Create_contact_lastname_Test"/>
+      <class name="com.comast.crm.orgtest.Createorgnization_byindustrandType_Test3"/>
+      <class name="com.comcast.crm.contacttest.Create_contact_lastname_StartandEndDate"/>
+      <class name="com.comcast.crm.contacttest.contact"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
