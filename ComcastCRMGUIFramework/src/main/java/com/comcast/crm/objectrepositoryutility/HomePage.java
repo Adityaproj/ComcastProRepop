@@ -21,6 +21,14 @@ public class HomePage {
 	@FindBy(linkText = "Product")
 	private WebElement productlink;
 	
+public WebDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getProductlink() {
+		return productlink;
+	}
+
 @FindBy(linkText = "Organizations")
 private WebElement orglink;
 
