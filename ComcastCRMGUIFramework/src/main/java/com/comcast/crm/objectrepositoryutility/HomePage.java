@@ -23,7 +23,7 @@ public class HomePage {
 public WebDriver getDriver() {
 		return driver;
 	}
-
+//hj
 @FindBy(linkText = "Organizations")
 private WebElement orglink;
 
