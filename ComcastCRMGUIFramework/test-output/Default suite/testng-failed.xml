@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.comcast.crm.generic.assertion.createContactTest">
+      <class name="com.comcast.crm.generic.basicutility.createContactTest">
         <methods>
-          <include name="configAM"/>
           <include name="configBM"/>
-          <include name="createContact"/>
-          <include name="congigBC"/>
-          <include name="congigBs"/>
+          <include name="configAM"/>
           <include name="congigAC"/>
           <include name="congigAS"/>
+          <include name="congigBC"/>
+          <include name="congigBs"/>
+          <include name="createContact"/>
         </methods>
-      </class> <!-- com.comcast.crm.generic.assertion.createContactTest -->
+      </class> <!-- com.comcast.crm.generic.basicutility.createContactTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -47,7 +47,9 @@ public class BaseclassTest {
 	public void congigBC() throws Throwable
 	{
 		System.out.println("launch the browser");
-		String BROWSER = flib.getDataFromPropertiesFile("browser");
+		
+		
+		String BROWSER = System.getProperty("browser" , getDataFromPropertiesFile("browser"));    
 	
 		
 		if (BROWSER.equals("chrome")) {
@@ -70,14 +72,23 @@ public class BaseclassTest {
 		UtilityClassObject.setDriver(driver);
 	}
 
+private String getDataFromPropertiesFile(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 @BeforeMethod
 	 public void configBM() throws Throwable
 	 {
 		System.out.println("Login to the application");
 		LoginPage lp=new LoginPage(driver);
-		String URL=flib.getDataFromPropertiesFile("url");
-		String USERNAME=flib.getDataFromPropertiesFile("username");
-		String PASSWORD=flib.getDataFromPropertiesFile("password");
+		//String URL=flib.getDataFromPropertiesFile("url");
+	//	String USERNAME=flib.getDataFromPropertiesFile("username");
+	//	String PASSWORD=flib.getDataFromPropertiesFile("password");
+		String URL=System.getProperty("url");
+		String USERNAME=System.getProperty("username");
+		String PASSWORD=System.getProperty("password");
 		lp.Login(URL, USERNAME, PASSWORD);
 		 }
 	
